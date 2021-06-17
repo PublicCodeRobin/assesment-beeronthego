@@ -13,7 +13,7 @@ function ErrorMessage(props) {
       bg={'red.300'}
       mb={5}
     >
-      <WarningIcon/> Oeps! {!!message ? message : 'Er ging iets verkeerd!' }
+      <WarningIcon/> Oops! {!!message ? message : 'Something went wrong...' }
     </Box>
   );
 }
@@ -22,4 +22,4 @@ ErrorMessage.propTypes = {
   message: PropTypes.string,
 };
 
-export default ErrorMessage;
+export default React.memo(ErrorMessage);

@@ -66,7 +66,7 @@ const Shop = (props) => {
   );
 };
 
-export default Shop;
+export default React.memo(Shop);
 
 Shop.propTypes = {
   geoData: PropTypes.object,

@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Button, Input, InputGroup, InputLeftElement, Stack, Text } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
 
 const Searchbar = (props) => {
-  const { zipcode, setZipcode } = props;
-  console.log(zipcode);
+  const [zipcode, setZipcode] = useState('');
   return (
     <Box
       my={5}
@@ -14,7 +13,7 @@ const Searchbar = (props) => {
         <Text>
           A micro brewery nearby? Fill in your postal code and find out!
         </Text>
-        <form onSubmit={e => props.startSearch(e)}>
+        <form onSubmit={e => props.startSearch(e, zipcode)}>
           <InputGroup>
             <InputLeftElement
               pointerEvents="none"
@@ -24,7 +23,7 @@ const Searchbar = (props) => {
             <Input
               value={zipcode}
               maxLength={7}
-              onChange={setZipcode}
+              onChange={e => setZipcode(e.target.value)}
               type="text"
               placeholder="1234 AB"
             />
@@ -49,4 +48,4 @@ Searchbar.propTypes = {
   zipcode: PropTypes.string,
 };
 
-export default Searchbar;
+export default React.memo(Searchbar);

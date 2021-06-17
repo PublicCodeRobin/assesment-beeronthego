@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68314ded-9322-427e-897f-febe031d9279" name="Default Changelist" comment="move to functional components, some UX">
+    <list default="true" id="68314ded-9322-427e-897f-febe031d9279" name="Default Changelist" comment="remove old todo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ErrorMessage/ErrorMessage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ErrorMessage/ErrorMessage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResultDescription/ResultDescription.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultDescription/ResultDescription.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Shop/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shop/Shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Shops/Shops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shops/Shops.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +40,7 @@
     <property name="settings.editor.selected.configurable" value="MTHome" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -45,9 +51,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="storybook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
   </component>
@@ -59,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623950835561</updated>
-      <workItem from="1623950839095" duration="1578000" />
+      <workItem from="1623950839095" duration="4360000" />
     </task>
     <task id="LOCAL-00001" summary="move to functional components, some UX">
       <created>1623952130313</created>
@@ -68,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623952130313</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="remove old todo">
+      <created>1623952466400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623952466400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="move to functional components, some UX" />
-    <option name="LAST_COMMIT_MESSAGE" value="move to functional components, some UX" />
+    <MESSAGE value="remove old todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove old todo" />
   </component>
 </project>
