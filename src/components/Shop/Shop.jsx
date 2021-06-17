@@ -6,10 +6,7 @@ import PropTypes from 'prop-types';
 
 const Shop = (props) => {
   const { name, address, zipcode, city } = props;
-  /*
-   * TODO: Add butotn to navigate to brewery
-   *
-   */
+
   const { geoData } = props;
   const { distance } = geoData || {};
 

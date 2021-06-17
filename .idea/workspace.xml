@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68314ded-9322-427e-897f-febe031d9279" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Container/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container/Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.jsx" afterDir="false" />
+    <list default="true" id="68314ded-9322-427e-897f-febe031d9279" name="Default Changelist" comment="move to functional components, some UX">
       <change beforePath="$PROJECT_DIR$/src/components/Shop/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shop/Shop.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +59,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623950835561</updated>
-      <workItem from="1623950839095" duration="1248000" />
+      <workItem from="1623950839095" duration="1578000" />
     </task>
+    <task id="LOCAL-00001" summary="move to functional components, some UX">
+      <created>1623952130313</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623952130313</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="move to functional components, some UX" />
+    <option name="LAST_COMMIT_MESSAGE" value="move to functional components, some UX" />
   </component>
 </project>
