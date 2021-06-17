@@ -1,0 +1,56 @@
+{
+  "1221CN": [
+    {
+      "place_id": 260482678,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "boundingbox": [
+        "52.071460513235",
+        "52.391460513235",
+        "5.0287743088235",
+        "5.3487743088235"
+      ],
+      "lat": "52.23146051323526",
+      "lon": "5.18877430882353",
+      "display_name": "Hilversum, North Holland, Netherlands, 1221CN, Netherlands",
+      "class": "place",
+      "type": "postcode",
+      "importance": 0.33499999999999996
+    }
+  ],
+  "2241BT ": [
+    {
+      "place_id": 260552222,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+      "boundingbox": [
+        "51.9260413",
+        "52.2460413",
+        "4.5814468666667",
+        "4.9014468666667"
+      ],
+      "lat": "52.086041300000005",
+      "lon": "4.741446866666667",
+      "display_name": "Bodegraven, Bodegraven-Reeuwijk, South Holland, Netherlands, 2411BT, Netherlands",
+      "class": "place",
+      "type": "postcode",
+      "importance": 0.33499999999999996
+    },
+    [
+      {
+        "place_id": 260482678,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+        "boundingbox": [
+          "52.071460513235",
+          "52.391460513235",
+          "5.0287743088235",
+          "5.3487743088235"
+        ],
+        "lat": "52.23146051323526",
+        "lon": "5.18877430882353",
+        "display_name": "Hilversum, North Holland, Netherlands, 1221CN, Netherlands",
+        "class": "place",
+        "type": "postcode",
+        "importance": 0.33499999999999996
+      }
+    ]
+  ]
+}
