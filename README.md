@@ -15,8 +15,8 @@ Try to not make too many queries in a short period, else you'll probably be bloc
 If it happens you can open the app from another IP on a mobile hotspot for example.
 
 ## Notes about code:   
-Starting the project I wanted to have as little surpises as possible since I've already had some problems with the search of a free Geocoding API.  
+Starting the project I wanted to have as little surprises as possible since I've already had some problems with the search of a free Geocoding API.  
 This made me make the following concessions:
-- Using chackra-ui instead of styled components with a library for a quick setup
-- I'm more familiar with class based components so I've used that for the ones that need state-management
-- I've experimented to move to hooks/context in the codebase and I realized that would make things quite a bit easier... Learning point for me next time. Context might be a bit overkill for now tough.
+- Using chakra-ui instead of styled components with a library for a quick setup
+- I'm more familiar with class based components, so I've used that for the ones that need state-management
+- I've experimented to move to hooks/context in the codebase. I've realized that would make things quite a bit easier... Learning point for me next time. Context might be a bit overkill for now tough.
