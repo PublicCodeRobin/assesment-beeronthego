@@ -29,13 +29,9 @@ const Shop = (props) => {
   const googleDirectionsLink = `https://maps.google.com/?q=${[address, zipcode, city].join(',')}`;
 
   const linkContent = (
-
     <>
-
       <Link color={distanceColors(distance)} isExternal href={googleDirectionsLink}>
-        <Text alignContent={'center'}>
-          {distance} km | Navigate with maps <ArrowRightIcon color={distanceColors(distance)}/>
-        </Text>
+        {distance} km | Navigate with maps <ArrowRightIcon ml="1" color={distanceColors(distance)}/>
       </Link>
     </>
   );

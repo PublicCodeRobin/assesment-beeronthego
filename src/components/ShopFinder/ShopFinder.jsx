@@ -27,7 +27,7 @@ class ShopFinder extends Component {
   setLoading = loading => (this.setState({ loading }))
   resetError = () => (this.setState({ errorMsg: null }))
   setErrorMsg = error => (this.setState({ errorMsg: error.message }))
-  setZipcode = zipcode => (this.setState({ zipcode }));
+  setZipcode = zipcode => (this.setState({ zipcode: zipcode.target.value }));
 
 
   // Start looking for geo info based on zipcode after form submission
