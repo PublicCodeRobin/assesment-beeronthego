@@ -20,7 +20,7 @@ I already had some with the search of a free Geocoding API and that sucked up qu
 To keep up the speed I did these things:
 - I sticked to class-based components (for stateful components) for now.
 - Picked chakra-ui over styled components with a library for a quick setup...
-  Rebass seemed a bit outdated looking at the last human commit, and I couldn't make it run in the project.
+  Rebass seemed a bit outdated looking at the last human commit, and I couldn't make it run in the project somehow.🤔
   
 ## One more thing about shopfinder logic
 - I Experimented to move the shopfinder logic to another component with context (and hooks). This would be better when a Google Maps overview comes in later. But to keep myself at the timebox I've decided not to continue this path.
