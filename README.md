@@ -1,6 +1,6 @@
 ## Instructions to start the project:   
 1. Spinning up the devserver can be done with `npm start`
-1. Storybooks is also installed and can be run with `npm storybook`   
+1. Storybook is also installed and can be run with `npm storybook`   
 
 ### Storybook:   
 I've installed this to continue development after being blocked from an API (and I was not sure if I would get unblocked... below I explain more)
