@@ -136,6 +136,7 @@ class Shops extends Component {
         </Stack>
       ) : (
         <Skeleton
+          py="3"
           height="300px"
         />
       )

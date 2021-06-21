@@ -14,44 +14,38 @@ class ShopFinder extends Component {
     this.state = {
       loading: false,
       errorMsg: null,
-      zipcode: '',
       zipcodeResults: null,
     };
   }
 
-  get userCoordinatesUrl() {
-    const { zipcode } = this.state;
-    return !!zipcode ? osmZipcodeSearchUrl(zipcode) : null;
-  }
 
   setLoading = loading => (this.setState({ loading }))
   resetError = () => (this.setState({ errorMsg: null }))
   setErrorMsg = error => (this.setState({ errorMsg: error.message }))
-  setZipcode = zipcode => (this.setState({ zipcode }));
 
 
   // Start looking for geo info based on zipcode after form submission
-  startSearch = (e) => {
+  startSearch = (e, zipcode) => {
     e.preventDefault();
-    const { zipcode } = this.state;
     if (zipcode.length >= 4) {
-      this.setGeoInfo().then(() => {
-        this.setLoading(false);
-      });
+      this.setGeoInfo(zipcode);
     }
   };
 
   // Get geodata of zipcode from open street maps
-  setGeoInfo = () => {
+  setGeoInfo = (zipcode) => {
     this.resetError();
     this.setLoading(true);
-    if (!!this.userCoordinatesUrl) {
-      const { zipcode } = this.state;
-      return getOsmGeoData(zipcode).then((res) => {
-        this.setState({ zipcodeResults: !!res ? res : [] });
-        this.setLoading(false);
-      })
-        .catch(this.setErrorMsg);
+    if (!!osmZipcodeSearchUrl(zipcode)) {
+      getOsmGeoData(zipcode)
+        .then((res) => {
+          this.setState({ zipcodeResults: !!res ? res : [] });
+          this.setLoading(false);
+        })
+        .catch((err) => {
+          this.setLoading(false);
+          this.setErrorMsg(err);
+        });
     }
   }
 
@@ -65,7 +59,7 @@ class ShopFinder extends Component {
   }
 
   render() {
-    const { zipcode, loading, errorMsg, zipcodeResults } = this.state;
+    const { loading, errorMsg, zipcodeResults } = this.state;
     const firstZipcode = !!zipcodeResults?.length ? zipcodeResults[0] : null; // would otherwise be an empty array
 
     return (
@@ -73,7 +67,6 @@ class ShopFinder extends Component {
         <header>
           <Searchbar
             startSearch={this.startSearch}
-            zipcode={zipcode}
             setZipcode={this.setZipcode}
           />
           {!errorMsg && (

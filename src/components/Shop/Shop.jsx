@@ -6,10 +6,7 @@ import PropTypes from 'prop-types';
 
 const Shop = (props) => {
   const { name, address, zipcode, city } = props;
-  /*
-   * TODO: Add butotn to navigate to brewery
-   *
-   */
+
   const { geoData } = props;
   const { distance } = geoData || {};
 
@@ -29,13 +26,9 @@ const Shop = (props) => {
   const googleDirectionsLink = `https://maps.google.com/?q=${[address, zipcode, city].join(',')}`;
 
   const linkContent = (
-
     <>
-
       <Link color={distanceColors(distance)} isExternal href={googleDirectionsLink}>
-        <Text alignContent={'center'}>
-          {distance} km | Navigate with maps <ArrowRightIcon color={distanceColors(distance)}/>
-        </Text>
+        {distance} km | Navigate with maps <ArrowRightIcon ml="1" color={distanceColors(distance)}/>
       </Link>
     </>
   );
@@ -73,7 +66,7 @@ const Shop = (props) => {
   );
 };
 
-export default Shop;
+export default React.memo(Shop);
 
 Shop.propTypes = {
   geoData: PropTypes.object,

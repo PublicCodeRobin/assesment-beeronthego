@@ -33,4 +33,4 @@ ResultDescription.propTypes = {
   noResultText: PropTypes.string.isRequired,
 };
 
-export default ResultDescription;
+export default React.memo(ResultDescription);
