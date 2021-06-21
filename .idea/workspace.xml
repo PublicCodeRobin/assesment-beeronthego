@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68314ded-9322-427e-897f-febe031d9279" name="Default Changelist" comment="performance improvements.. zipcode changes did lots of rerenders">
+    <list default="true" id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="put together">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +15,52 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="newmaster" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="8a0ecc3840b184e2a2ad24ccecc6a2da81ede102" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1624256325" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="newmaster" />
+                    <option name="lastUsedInstant" value="1624256312" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="mastermain" />
+                    <option name="lastUsedInstant" value="1624255831" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1u5M7jXJdPamOxPqxlpXDKfQNwB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -23,6 +70,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -31,7 +79,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTHome" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.start">
@@ -59,19 +107,22 @@
       <list>
         <item itemvalue="npm.start" />
         <item itemvalue="npm.storybook" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="68314ded-9322-427e-897f-febe031d9279" name="Default Changelist" comment="" />
+      <changelist id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="put together" />
       <created>1623950835561</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623950835561</updated>
       <workItem from="1623950839095" duration="5390000" />
       <workItem from="1624255101005" duration="310000" />
+      <workItem from="1624276672733" duration="1940000" />
     </task>
     <task id="LOCAL-00001" summary="move to functional components, some UX">
       <created>1623952130313</created>
@@ -94,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623955291152</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="put together">
+      <created>1624255706998</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624255706998</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,12 +164,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -129,6 +192,16 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="oldest" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="master" />
                 </option>
               </RecentGroup>
@@ -143,6 +216,11 @@
     <MESSAGE value="move to functional components, some UX" />
     <MESSAGE value="remove old todo" />
     <MESSAGE value="performance improvements.. zipcode changes did lots of rerenders" />
-    <option name="LAST_COMMIT_MESSAGE" value="performance improvements.. zipcode changes did lots of rerenders" />
+    <MESSAGE value="put together" />
+    <option name="LAST_COMMIT_MESSAGE" value="put together" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
