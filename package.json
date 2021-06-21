@@ -1,13 +1,12 @@
 {
   "name": "beeronthego",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "haversine-distance": "^1.2.1",
-    "node-sass": "^5.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^12.20.15",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -18,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "fix": "eslint --ext .jsx,.js src/ --fix",
+    "fix": "eslint --ext .jsx,.js,.tsx,.ts src/ --fix",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -51,12 +50,8 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
     "@chakra-ui/icons": "^1.0.13",
-    "@chakra-ui/react": "^1.6.3",
+    "@chakra-ui/react": "^1.6.4",
     "@emotion/babel-plugin": "^11.3.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
@@ -66,12 +61,13 @@
     "@storybook/node-logger": "^6.2.9",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.9",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint-plugin-import": "^2.23.4",
     "framer-motion": "^4.1.17",
+    "haversine-distance": "^1.2.1",
     "http-proxy-middleware": "^2.0.0",
     "prop-types": "^15.7.2",
     "react-router-dom": "^5.2.0",
-    "react-slick": "^0.28.1",
-    "react-swipeable": "^6.1.0",
-    "styled-components": "^5.3.0"
+    "typescript": "^4.3.5"
   }
 }

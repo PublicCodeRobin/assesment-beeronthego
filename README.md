@@ -1,11 +1,11 @@
 ## Instructions to start the project:   
 1. Spinning up the devserver can be done with `npm start`
-1. Storybooks is also installed and can be run with `npm storybook`   
+1. Storybook is also installed and can be run with `npm storybook`   
 
 ### Storybook:   
 I've installed this to continue development after being blocked from an API (and I was not sure if I would get unblocked... below I explain more)
 
-### Notes about OpenStreetMaps:   
+### Notes about OpenStreetMaps API:   
 I've used open street maps for geocoding.  
 It's a free API that can be used to get coordinates from places.  
 I've had a nice live results implementation but I've soon been blocked for making too many requests...  
@@ -15,8 +15,12 @@ Try to not make too many queries in a short period, else you'll probably be bloc
 If it happens you can open the app from another IP on a mobile hotspot for example.
 
 ## Notes about code:   
-Starting the project I wanted to have as little surpises as possible since I've already had some problems with the search of a free Geocoding API.  
-This made me make the following concessions:
-- Using chackra-ui instead of styled components with a library for a quick setup
-- I'm more familiar with class based components so I've used that for the ones that need state-management
-- I've experimented to move to hooks/context in the codebase and I realized that would make things quite a bit easier... Learning point for me next time. Context might be a bit overkill for now tough.
+Starting the project I wanted to have as little surprises as possible.   
+I already had some with the search of a free Geocoding API and that sucked up quite some time.   
+To keep up the speed I did these things:
+- I sticked to class-based components (for stateful components) for now.
+- Picked chakra-ui over styled components with a library for a quick setup...
+  Rebass seemed a bit outdated looking at the last human commit, and I couldn't make it run in the project somehow.🤔
+  
+## One more thing about shopfinder logic
+- I Experimented to move the shopfinder logic to another component with context (and hooks). This would be better when a Google Maps overview comes in later. But to keep myself at the timebox I've decided not to continue this path.

@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { FC, memo } from 'react';
 import { Box, Heading, Link, Text } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons';
 
 import PropTypes from 'prop-types';
+import { TShopData } from '../../models/ShopData';
 
-const Shop = (props) => {
-  const { name, address, zipcode, city } = props;
-  /*
-   * TODO: Add butotn to navigate to brewery
-   *
-   */
-  const { geoData } = props;
-  const { distance } = geoData || {};
+const Shop: FC<TShopData> = (props) => {
+  const { name, address, zipcode, city, geoData = {} } = props;
 
-  const distanceColors = (distance) => {
+  const { distance } = geoData;
+
+  const googleDirectionsLink = `https://maps.google.com/?q=${[address, zipcode, city].join(',')}`;
+
+
+  const distanceColors = (distance: number|string) => {
     let color = 'grey.400';
     if (distance < 35) {
       color = 'green.400';
@@ -25,18 +25,17 @@ const Shop = (props) => {
     return color;
   };
 
-
-  const googleDirectionsLink = `https://maps.google.com/?q=${[address, zipcode, city].join(',')}`;
-
   const linkContent = (
-
     <>
-
-      <Link color={distanceColors(distance)} isExternal href={googleDirectionsLink}>
-        <Text alignContent={'center'}>
-          {distance} km | Navigate with maps <ArrowRightIcon color={distanceColors(distance)}/>
-        </Text>
-      </Link>
+      {!!distance && (
+        <Link
+          color={distanceColors(distance)}
+          isExternal
+          href={googleDirectionsLink}>
+          {distance} km | Navigate with maps <ArrowRightIcon ml="1" color={distanceColors(distance)}/>
+        </Link>
+      )
+      }
     </>
   );
 
@@ -73,7 +72,7 @@ const Shop = (props) => {
   );
 };
 
-export default Shop;
+export default memo(Shop);
 
 Shop.propTypes = {
   geoData: PropTypes.object,

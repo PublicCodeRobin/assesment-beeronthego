@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import PropTypes from 'prop-types';
 import { Box } from '@chakra-ui/react';
 import { WarningIcon } from '@chakra-ui/icons';
 
-function ErrorMessage(props) {
+const ErrorMessage: FC<{ message?: string }> = (props) => {
   const { message } = props;
   return (
     <Box
@@ -13,13 +13,13 @@ function ErrorMessage(props) {
       bg={'red.300'}
       mb={5}
     >
-      <WarningIcon/> Oeps! {!!message ? message : 'Er ging iets verkeerd!' }
+      <WarningIcon/> Oops! {!!message ? message : 'Something went wrong...' }
     </Box>
   );
-}
+};
 
 ErrorMessage.propTypes = {
   message: PropTypes.string,
 };
 
-export default ErrorMessage;
+export default React.memo(ErrorMessage);

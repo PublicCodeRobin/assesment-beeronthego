@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="10" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="" />
+    <list default="true" id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="cleanup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Shops/Shops.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shops/Shops.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="ComposerSettings">
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hooks" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="8a0ecc3840b184e2a2ad24ccecc6a2da81ede102" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -22,12 +50,24 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1623938019" />
+                    <option name="branchName" value="typescript-conversion" />
+                    <option name="lastUsedInstant" value="1626689546" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1623938018" />
+                    <option name="branchName" value="hooks-try" />
+                    <option name="lastUsedInstant" value="1626286363" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="wip-typescript" />
+                    <option name="lastUsedInstant" value="1626286076" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1624256325" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="newmaster" />
+                    <option name="lastUsedInstant" value="1624256312" />
                   </RecentBranch>
                 </list>
               </option>
@@ -38,7 +78,7 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="ProjectId" id="1u4vLWXuxuY27vhuvfh7t1Tg92E" />
+  <component name="ProjectId" id="1u5M7jXJdPamOxPqxlpXDKfQNwB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,29 +86,285 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="ts.external.directory.path" value="C:\Users\rstei\PhpstormProjects\assesment-beeronthego\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rstei\PhpstormProjects\assesment-beeronthego\src\utils" />
+      <recent name="C:\Users\rstei\PhpstormProjects\assesment-beeronthego\src\__OLD" />
+      <recent name="C:\Users\rstei\PhpstormProjects\assesment-beeronthego\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rstei\PhpstormProjects\assesment-beeronthego\src\__OLD" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="storybook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.fix" />
+        <item itemvalue="npm.storybook" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="" />
-      <created>1623937620464</created>
+      <changelist id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="put together" />
+      <created>1623950835561</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1623937620464</updated>
-      <workItem from="1623937621888" duration="304000" />
-      <workItem from="1623937998228" duration="916000" />
+      <updated>1623950835561</updated>
+      <workItem from="1623950839095" duration="5390000" />
+      <workItem from="1624255101005" duration="310000" />
+      <workItem from="1624276672733" duration="5381000" />
+      <workItem from="1624526299195" duration="4623000" />
+      <workItem from="1624545613468" duration="602000" />
+      <workItem from="1626170004784" duration="1202000" />
+      <workItem from="1626205176490" duration="1829000" />
+      <workItem from="1626270507924" duration="1189000" />
+      <workItem from="1626284156423" duration="5060000" />
+      <workItem from="1626294721105" duration="1193000" />
+      <workItem from="1626338027434" duration="7091000" />
+      <workItem from="1626728512782" duration="2400000" />
+      <workItem from="1626767635933" duration="15995000" />
+      <workItem from="1626853368501" duration="17610000" />
+      <workItem from="1626940165107" duration="11332000" />
     </task>
+    <task id="LOCAL-00001" summary="move to functional components, some UX">
+      <created>1623952130313</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623952130313</updated>
+    </task>
+    <task id="LOCAL-00002" summary="remove old todo">
+      <created>1623952466400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623952466400</updated>
+    </task>
+    <task id="LOCAL-00003" summary="performance improvements.. zipcode changes did lots of rerenders">
+      <created>1623955291152</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623955291152</updated>
+    </task>
+    <task id="LOCAL-00004" summary="put together">
+      <created>1624255706998</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624255706998</updated>
+    </task>
+    <task id="LOCAL-00005" summary="remove deps, add package-lock">
+      <created>1624278695475</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624278695475</updated>
+    </task>
+    <task id="LOCAL-00006" summary="put things apart">
+      <created>1626286042617</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626286042617</updated>
+    </task>
+    <task id="LOCAL-00007" summary="revrt stuff">
+      <created>1626286246951</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626286246951</updated>
+    </task>
+    <task id="LOCAL-00008" summary="put back">
+      <created>1626360166924</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626360166924</updated>
+    </task>
+    <task id="LOCAL-00009" summary="converted shops component to functional / hooks version">
+      <created>1626363123015</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626363123015</updated>
+    </task>
+    <task id="LOCAL-00010" summary="converted shops component to functional / hooks version">
+      <created>1626364044154</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626364044154</updated>
+    </task>
+    <task id="LOCAL-00011" summary="converted shops component to functional / hooks version, rename stuff">
+      <created>1626364415726</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626364415726</updated>
+    </task>
+    <task id="LOCAL-00012" summary="rename stuff">
+      <created>1626365086082</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626365086082</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix bug">
+      <created>1626365278287</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626365278287</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix bugs">
+      <created>1626365330498</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626365330498</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix bug in err message">
+      <created>1626365474745</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626365474745</updated>
+    </task>
+    <task id="LOCAL-00016" summary="ShopFinder to tsx">
+      <created>1626695321672</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1626695321672</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add new api in typescript">
+      <created>1626709421496</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1626709421496</updated>
+    </task>
+    <task id="LOCAL-00018" summary="wip">
+      <created>1626776513968</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1626776513968</updated>
+    </task>
+    <task id="LOCAL-00019" summary="wip">
+      <created>1626776816820</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1626776816820</updated>
+    </task>
+    <task id="LOCAL-00020" summary="wip made shops work as well now">
+      <created>1626777930522</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1626777930522</updated>
+    </task>
+    <task id="LOCAL-00021" summary="more typescript. preparing cleanup">
+      <created>1626786561736</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1626786561736</updated>
+    </task>
+    <task id="LOCAL-00022" summary="more typescript. cleaning up">
+      <created>1626867734619</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1626867734619</updated>
+    </task>
+    <task id="LOCAL-00023" summary="convert more component to typescript">
+      <created>1626870526714</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1626870526714</updated>
+    </task>
+    <task id="LOCAL-00024" summary="rename some things">
+      <created>1626871194842</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1626871194842</updated>
+    </task>
+    <task id="LOCAL-00025" summary="cleaning">
+      <created>1626888998973</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1626888998973</updated>
+    </task>
+    <task id="LOCAL-00026" summary="cleaning">
+      <created>1626889584918</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1626889584918</updated>
+    </task>
+    <task id="LOCAL-00027" summary="cleanup">
+      <created>1626971008518</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1626971008518</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,10 +375,84 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="oldest" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="move to functional components, some UX" />
+    <MESSAGE value="remove old todo" />
+    <MESSAGE value="performance improvements.. zipcode changes did lots of rerenders" />
+    <MESSAGE value="put together" />
+    <MESSAGE value="remove deps, add package-lock" />
+    <MESSAGE value="put things apart" />
+    <MESSAGE value="revrt stuff" />
+    <MESSAGE value="put back" />
+    <MESSAGE value="converted shops component to functional / hooks version" />
+    <MESSAGE value="converted shops component to functional / hooks version, rename stuff" />
+    <MESSAGE value="rename stuff" />
+    <MESSAGE value="fix bug" />
+    <MESSAGE value="fix bugs" />
+    <MESSAGE value="fix bug in err message" />
+    <MESSAGE value="ShopFinder to tsx" />
+    <MESSAGE value="add new api in typescript" />
+    <MESSAGE value="wip" />
+    <MESSAGE value="wip made shops work as well now" />
+    <MESSAGE value="more typescript. preparing cleanup" />
+    <MESSAGE value="more typescript. cleaning up" />
+    <MESSAGE value="convert more component to typescript" />
+    <MESSAGE value="rename some things" />
+    <MESSAGE value="cleaning" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
