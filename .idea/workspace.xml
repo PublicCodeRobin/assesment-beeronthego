@@ -7,12 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="squash! cleanup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Shops/Shops.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shops/Shops.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.ts" afterDir="false" />
+    <list default="true" id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="fixbugs">
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +189,7 @@
       <workItem from="1626728512782" duration="2400000" />
       <workItem from="1626767635933" duration="15995000" />
       <workItem from="1626853368501" duration="17610000" />
-      <workItem from="1626940165107" duration="19608000" />
+      <workItem from="1626940165107" duration="20545000" />
     </task>
     <task id="LOCAL-00001" summary="move to functional components, some UX">
       <created>1623952130313</created>
@@ -398,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626978691394</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fixbugs">
+      <created>1626979976809</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1626979976809</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +467,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="move to functional components, some UX" />
     <MESSAGE value="remove old todo" />
     <MESSAGE value="performance improvements.. zipcode changes did lots of rerenders" />
     <MESSAGE value="put together" />
@@ -489,7 +491,8 @@
     <MESSAGE value="cleaning" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="submit last changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="submit last changes" />
+    <MESSAGE value="fixbugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixbugs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
