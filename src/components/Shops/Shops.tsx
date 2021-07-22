@@ -11,6 +11,7 @@ import { TShopData } from '../../models/ShopData';
 
 const Shops: FC<{ zipcodeResult: TLocation | null }> = (props) => {
   const { zipcodeResult } = props;
+
   const [loading, setLoading] = useState<boolean>(false);
   const [shops, setShops] = useState<TShopData[]>([]);
 

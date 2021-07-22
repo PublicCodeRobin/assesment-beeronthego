@@ -42,12 +42,7 @@ export async function getGeoDataByZip(zipcode:string|null|undefined): Promise<TL
         },
       });
 
-
       const jsonRes = await response.json();
-      if (!jsonRes.isArray) {
-        const { error } = jsonRes;
-        return Promise.reject(error);
-      }
 
       const location: TLocation = jsonRes[0];
 
@@ -57,6 +52,8 @@ export async function getGeoDataByZip(zipcode:string|null|undefined): Promise<TL
         }
         return Promise.reject(new Error(`No zipcode location info found!`));
       }
+      const { error } = jsonRes;
+      return Promise.reject(error);
     }
   }
 }

@@ -41,7 +41,7 @@ const ShopFinder: FC = () => {
       })
       .catch((err) => {
         handleError(err);
-        setError(err.message);
+        setError(err?.message || 'Shops could not be found');
       })
       .finally(() => setLoading(false));
   };
