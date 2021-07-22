@@ -7,7 +7,7 @@ export const osmZipcodeSearchUrl = (zipcode:string) => {
   return `/osm?postalcode=${zipWithoutSpaces}&countrycodes=nl,be&format=json`;
 };
 
-export const shopsUrl = `${_baseURL}/shops.json`;
+export const shopsUrl = `${_baseURL}/shops.jsxon`;
 
 /**
  * Handle errors
@@ -15,12 +15,12 @@ export const shopsUrl = `${_baseURL}/shops.json`;
  */
 export const handleError = (err?:Error) => {
   if (!!err?.message) {
-    console.error('Request failed', err.message);
+    return console.error('Request failed...', err.message);
   }
   if (err?.name === 'AbortError') {
-    console.log('Request was cancelled');
+    return console.log('Request was cancelled');
   }
-  console.error('Error! Unknown error');
+  return console.error('Error! Unknown error');
 };
 
 /**

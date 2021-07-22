@@ -9,9 +9,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5dc19185-2645-4f6a-b1ec-c18ef1274a49" name="Default Changelist" comment="cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShopFinder/ShopFinder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Shops/Shops.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shops/Shops.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +26,19 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hooks" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="put together" />
+        <option name="rewordedMessage" value="cleanup&#10;&#10;&#10;cleanup&#10;&#10;&#10;cleanup&#10;&#10;&#10;cleaning&#10;&#10;&#10;cleaning&#10;&#10;&#10;rename some things&#10;&#10;&#10;convert more component to typescript&#10;&#10;&#10;more typescript. cleaning up&#10;&#10;&#10;more typescript. preparing cleanup&#10;&#10;&#10;wip made shops work as well now&#10;&#10;&#10;wip&#10;&#10;&#10;wip&#10;&#10;&#10;add new api in typescript&#10;&#10;&#10;ShopFinder to tsx&#10;&#10;&#10;wip&#10;&#10;&#10;tidy up&#10;&#10;&#10;fix bug in err message&#10;&#10;&#10;fix bugs&#10;&#10;&#10;fix bug&#10;&#10;&#10;rename stuff&#10;&#10;&#10;converted shops component to functional / hooks version, rename stuff&#10;&#10;&#10;converted shops component to functional / hooks version&#10;&#10;&#10;converted shops component to functional / hooks version&#10;&#10;&#10;put back&#10;&#10;&#10;revrt stuff&#10;&#10;&#10;put things apart&#10;&#10;&#10;add lock&#10;&#10;&#10;remove deps, add package-lock&#10;&#10;&#10;put together" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
     <option name="onto" value="8a0ecc3840b184e2a2ad24ccecc6a2da81ede102" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -50,6 +58,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="newmain" />
+                    <option name="lastUsedInstant" value="1626971720" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="typescript-conversion" />
                     <option name="lastUsedInstant" value="1626689546" />
                   </RecentBranch>
@@ -65,10 +77,6 @@
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1624256325" />
                   </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="newmaster" />
-                    <option name="lastUsedInstant" value="1624256312" />
-                  </RecentBranch>
                 </list>
               </option>
               <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
@@ -77,6 +85,9 @@
         </option>
       </RecentBranches>
     </option>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="5d50122c-f5f6-4363-aefc-2bf29870b41e" />
   </component>
   <component name="ProjectId" id="1u5M7jXJdPamOxPqxlpXDKfQNwB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -90,6 +101,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTTP Request" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -112,7 +124,10 @@
       <recent name="C:\Users\rstei\PhpstormProjects\assesment-beeronthego\src\__OLD" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="HTTP Request.scratch_10#1">
+    <configuration name="scratch_10#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch_10.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -145,6 +160,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.scratch_10#1" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.fix" />
         <item itemvalue="npm.storybook" />
@@ -173,7 +189,7 @@
       <workItem from="1626728512782" duration="2400000" />
       <workItem from="1626767635933" duration="15995000" />
       <workItem from="1626853368501" duration="17610000" />
-      <workItem from="1626940165107" duration="11332000" />
+      <workItem from="1626940165107" duration="18306000" />
     </task>
     <task id="LOCAL-00001" summary="move to functional components, some UX">
       <created>1623952130313</created>
@@ -364,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626971008518</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="cleanup">
+      <created>1626971648105</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1626971648105</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +409,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="newmain" />
                       </list>
                     </value>
                   </entry>
@@ -402,6 +425,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="newmain" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="main" />

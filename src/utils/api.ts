@@ -15,20 +15,18 @@ export async function getShops() : Promise<TShopData[]> {
 
     type JSONResponse = {
         breweries?: TShopData[],
-        errors? : Array<{ message: string }>
+        error? : Error,
     }
 
-    const { breweries, errors }: JSONResponse = await response.json();
+    const { breweries, error }: JSONResponse = await response.json();
 
     if (response.ok) {
       if (!!breweries?.length) {
         return breweries;
       }
-      return Promise.reject(errors);
+      return Promise.reject(error);
     }
 
-    const error = new Error(errors?.map(e => e.message)
-      .join('\n') ?? 'unknown error');
     return Promise.reject(error);
 }
 
@@ -44,18 +42,21 @@ export async function getGeoDataByZip(zipcode:string|null|undefined): Promise<TL
         },
       });
 
-      const jsonRes: TLocation[] = await response.json();
+
+      const jsonRes = await response.json();
+      if (!jsonRes.isArray) {
+        const { error } = jsonRes;
+        return Promise.reject(error);
+      }
+
       const location: TLocation = jsonRes[0];
 
       if (response.ok) {
-        if (!!location) {
+        if (!!location.lat && !!location.lon) {
           return location;
         }
-        return Promise.reject(new Error(`no breweries found`));
+        return Promise.reject(new Error(`No zipcode location info found!`));
       }
-
-      const error = new Error('no good');
-      return Promise.reject(error);
     }
   }
 }

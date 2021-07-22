@@ -14,9 +14,6 @@ const Shops: FC<{ zipcodeResult: TLocation | null }> = (props) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [shops, setShops] = useState<TShopData[]>([]);
 
-  const firstZipRes = !!zipcodeResult ? zipcodeResult : null;
-  const { lat: userLat, lon: userLon } = firstZipRes || {};
-
   const sortOnDistance = (a: TShopData, b: TShopData) => {
     if (!!a?.geoData && !!b?.geoData) {
       const { distance: distA = 0 } = a.geoData;
@@ -34,7 +31,7 @@ const Shops: FC<{ zipcodeResult: TLocation | null }> = (props) => {
   };
 
   // use callback to stop eslint from yelling
-  const fetchHydratedShops = useCallback(async () => {
+  const fetchShopsAndGeoData = useCallback(async (userLat, userLon) => {
     setLoading(true);
     return getShops().then((shops) => {
       // const shopsToGet = shops.splice(0, 0); // !UNCOMMENT FOR DEVELOPMENT, OTHERWISE YOU MIGHT GET BLOCKED FROM OPEN STREET MAPS
@@ -55,18 +52,20 @@ const Shops: FC<{ zipcodeResult: TLocation | null }> = (props) => {
               };
             });
         });
-        return Promise.all(promises).then((res) => {
-          console.log('promissed');
-          return res.sort((a, b) => sortOnDistance(a, b));
-        });
+        return Promise.all(promises)
+          .then((res) => {
+            return res.sort((a, b) => sortOnDistance(a, b));
+          });
       }
       return shops; // Just return the normal shops without geoLocation info if no geoData.lat/lon provided
     });
-  }, [userLat, userLon]);
+  }, []);
 
 
   useEffect(() => {
-    fetchHydratedShops()
+    const firstZipRes = !!zipcodeResult ? zipcodeResult : null;
+    const { lat: userLat, lon: userLon } = firstZipRes || {};
+    fetchShopsAndGeoData(userLat, userLon)
       .then((res) => {
         setShops(res);
       })
@@ -74,7 +73,7 @@ const Shops: FC<{ zipcodeResult: TLocation | null }> = (props) => {
       .finally(() => {
         setLoading(false);
       });
-  }, [zipcodeResult, fetchHydratedShops]);
+  }, [zipcodeResult, fetchShopsAndGeoData]);
 
 
   return (
